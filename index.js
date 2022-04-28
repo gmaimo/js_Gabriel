@@ -71,7 +71,8 @@ console.log(typeof String(number));
 
 //ej 10.
 let numero = 5.123456;
-console.log((numero.toFixed(3)));
+numero = parseFloat(3);
+console.log(numero);
 
 //ej 11.
 var String1 = "ola k ase";
@@ -97,9 +98,6 @@ console.log(typeof (10 - "1"));
 // number para realizar la operación matemática.
 
 //ej. 14
-let pal = "contigo";
-console.log(`Hey Tú, cómo te llamas. ¡Hey, estoy
-hablando ${pal}!`);
-pal = "yo";
-console.log(`Hey Tú, cómo te llamas. ¡Hey, estoy
-hablando ${pal}!`);
+let pal = "`Hey Tú, cómo te llamas. ¡Hey, estoy hablando contigo.";
+console.log(pal);
+console.log(pal.replace("contigo", "yo"));
