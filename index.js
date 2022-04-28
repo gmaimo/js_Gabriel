@@ -71,8 +71,7 @@ console.log(typeof String(number));
 
 //ej 10.
 let numero = 5.123456;
-numero = parseFloat(3);
-console.log(numero);
+console.log(numero.toFixed(3));
 
 //ej 11.
 var String1 = "ola k ase";
