@@ -1,4 +1,4 @@
-//ej 2. imprimir texto
+/* //ej 2. imprimir texto
 console.log("¡Empezamos con javascript!");
 
 //ej 3. Imprimir texto
@@ -65,7 +65,7 @@ console.log(`${phraseA} ${phraseB}`);
 
 //ej 9.
 let number = 5;
-/* number = "5"; */
+// number = "5"; 
 console.log(typeof number);
 console.log(typeof String(number));
 
@@ -99,4 +99,70 @@ console.log(typeof (10 - "1"));
 //ej. 14
 let pal = "`Hey Tú, cómo te llamas. ¡Hey, estoy hablando contigo.";
 console.log(pal);
-console.log(pal.replace("contigo", "yo"));
+console.log(pal.replace("contigo", "yo"));  */
+
+//ej. 15
+/* let num = prompt("Escribe un numero y te diré si es mayor de 100");
+
+if (num > 100){
+    alert("es mayor de 100")
+}else
+    alert("es menor de 100") */
+
+//ej. 16
+/* let n =  prompt("Escribe un numero y te diré si es positivo o negativo");
+
+if (n >= 0){
+    alert("es positivo")
+}else
+    alert("es negativo") */
+
+//ej. 17
+/* alert("introduce dos valores");
+let a = parseInt(prompt("valor a:"));
+let b = parseInt(prompt("valor b:"));
+let c = a + b;
+
+if (c > 50){
+    alert(c * 2)
+}else 
+    alert(c * 3) */
+
+//ej. 18
+/* let num = prompt("Introduce un número");
+
+if (num % 3 == 0){
+    alert("Es multiplo de 3")
+}else if(num % 8 == 0){
+    alert("Es multiple de 8")
+}else alert("Error") */
+
+//ej. 19+
+alert("responde con un SI o un NO")
+let buen_tiempo = prompt("Hace buen tiempo hoy?");
+let trabajo = prompt("Trabajas hoy?");
+
+
+if (buen_tiempo == "si" || buen_tiempo == "SI" || buen_tiempo == "Si"){
+    buen_tiempo = true;
+}else if (buen_tiempo == "no" || buen_tiempo == "NO" || buen_tiempo == "No")
+    buen_tiempo = false;
+else alert("el texto introducido no es correcto")
+
+if (trabajo == "si" || trabajo == "SI" || trabajo == "Si") {
+        trabajo = true;
+}else if (trabajo ==  "no" || trabajo == "NO" || trabajo == "No")
+        trabajo = false;
+else alert("el texto introducido no es correcto")
+
+console.log(trabajo)
+console.log(buen_tiempo)
+
+
+if (buen_tiempo && !trabajo){
+    alert("te dejo ir a la playa😎")
+}else if(buen_tiempo && trabajo){
+    alert("a currar👷‍♂️")
+}else if(!buen_tiempo && !trabajo){
+    alert("no hace dia de playa☔")
+}else alert("es lunes y está lloviendo🥺")
