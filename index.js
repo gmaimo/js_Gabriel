@@ -137,8 +137,8 @@ if (num % 3 == 0){
     alert("Es multiple de 8")
 }else alert("Error") */
 
-//ej. 19+
-alert("responde con un SI o un NO")
+//ej. 19
+/* alert("responde con un SI o un NO");
 let buen_tiempo = prompt("Hace buen tiempo hoy?");
 let trabajo = prompt("Trabajas hoy?");
 
@@ -155,8 +155,8 @@ if (trabajo == "si" || trabajo == "SI" || trabajo == "Si") {
         trabajo = false;
 else alert("el texto introducido no es correcto")
 
-console.log(trabajo)
-console.log(buen_tiempo)
+console.log(trabajo);
+console.log(buen_tiempo);
 
 
 if (buen_tiempo && !trabajo){
@@ -165,4 +165,58 @@ if (buen_tiempo && !trabajo){
     alert("a currar👷‍♂️")
 }else if(!buen_tiempo && !trabajo){
     alert("no hace dia de playa☔")
-}else alert("es lunes y está lloviendo🥺")
+}else alert("es lunes y está lloviendo🥺") */
+
+//ej. 20
+
+/* for (let x=1; x<=20; x++){
+    console.log(`${x-5}`)
+}
+ */
+//ej. 21
+/* let b = 0;
+
+for (let a = 0; a <= 20; a++){
+    b+=a;
+}
+console.log(`La suma de los primeros 20 números da: ${b}`); */
+
+//ej. 22
+/* let i = prompt("inserta un número");
+let a = 0;
+
+for(b=0; b<=i; b++){
+    a += b;
+}
+alert(`La suma de los primeros ${i} números da: ${a}`);  */
+
+//ej. 23
+let n = Number(prompt("inseta un número y te diré su factorial"));
+let a = 1;
+
+if (typeof n == "number" && !Number.isNaN(n) && Number.isInteger(n)){
+    for(b=1; b<=n; b++){
+        a *= b;
+    }
+}else alert(`no has insertado un número`);
+
+if(typeof n == "number" && !Number.isNaN(n) && Number.isInteger(n)){
+    alert(`el factorial de ${n} es: ${a}`);
+}
+
+
+
+
+
+
+
+//ej. 26
+/* for (let a = 1; a <= 100; a++){
+    if (a%5 == 0 && a%3 == 0){
+        console.log(`${a}: javascript`)
+    }else if (a%5 == 0){
+        console.log(`${a}: script`)
+    }else if(a%3 == 0){
+        console.log(`${a}: java`);
+    }
+} */
