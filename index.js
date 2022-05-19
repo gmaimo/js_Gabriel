@@ -477,17 +477,16 @@ console.log(mediaPuntuación(arrayNumeros)) */
 let datosSegundos = [0,2,5,8,22,30];
 
 function valoresUnicos(a,b){
-    let unido = a.concat(b);
-    let ordenado = unido.sort((x,y)=>x-y);
-    let filtro = new Set(ordenado);
-    return filtro;
+    let primero = a.filter(item => !b.includes(item));
+    let segundo = b.filter(item => !a.includes(item));
+    return primero.concat(segundo).sort((a,b)=>a-b);
 }
 
 console.log(valoresUnicos(datosPrimeros,datosSegundos)); */
 
 //* ej. 43
 
-/* let valores = [5,5,5,5,5,5,5,5,5,6,5,5];
+/* let valores = [5,5,5,5,5,5,5,5,5,2,5,5,5];
 
 function unico(array){
     let i = 0;
@@ -496,6 +495,66 @@ function unico(array){
     }
     return array[i+1];
 }
-
 console.log(unico(valores)); */
 
+//* ej. 44
+
+/* let computadora = {
+    open: function(){
+        console.log(`Bienvenido`);
+    },
+    close: function(){
+        console.log(`Adios`);
+    }
+}
+
+computadora.open()
+computadora.close() */
+
+//* ej. 45
+
+/* function Fruta(tipo, color, peso){
+    this.tipo = tipo;
+    this.color = color;
+    this.peso = peso;
+}
+
+const manzana = new Fruta(`Manzana`,`roja`, `0.5kg`);
+console.log(manzana); */
+
+//* ej. 46
+
+let data = [
+    {
+    name: "Gracia",
+    score: [21,3,5,78,25],
+    temporada: true
+},
+    {
+    name: "Nico M",
+    score: [55,66,77,55,66],
+    temporada: false
+},
+    {
+    name: "Nico G",
+    score: [12,34,67,89,34],
+    temporada: true
+},
+    {
+    name: "Gemma",
+    score: [12,90,13,45,6],
+    temporada: true
+}
+]
+
+function puntuacion(datos){
+    let averageScore = datos.map (e => e.score.reduce ((a,b) => a+b)/e.score.length);
+    let indice = 0;
+    for (let i = 0; i < datos.length; i++){
+        datos[i].score = averageScore[i];
+        if (averageScore[i]>averageScore[i-1]) indice = i;
+    }
+    return datos[indice];
+}
+
+console.log(puntuacion(data));
